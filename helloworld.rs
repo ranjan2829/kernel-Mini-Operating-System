@@ -1,8 +1,4 @@
-
-fn main() {
-    // Statements here are executed when the compiled binary is called.
-
-    // Print text to the console.
-    println!("Hello World!");
-    println!("Hi, Ranjan , learning Rust language !!!!")
+fn main(){
+    println!("hello, im ranjan , learning rust !");
+    
 }
