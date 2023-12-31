@@ -1,13 +1,20 @@
 use std::io;
-fn main(){
-    println!("guess the number");
-    println!("input the number guessed");
-    let mut guess=String::new();
-    let apples = 5; // immutable
-    let mut bananas = 5; // 
-    println!("apple: {apples}");
+use rand::Rng;
+
+fn main() {
+    println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+
+    println!("The secret number is: {secret_number}");
+
+    println!("Please input your guess.");
+
+    let mut guess = String::new();
+
     io::stdin()
         .read_line(&mut guess)
-        .expect("failed to read line");
-    println!("you guessed : {guess}");
+        .expect("Failed to read line");
+
+    println!("You guessed: {guess}");
 }
