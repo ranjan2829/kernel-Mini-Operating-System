@@ -36,18 +36,19 @@
 
 //     let one = x.2;
 // }
-use std::io;
-fn main(){
-    let a=[1,2,3,4,5];
-    println!("enter an array");
-    let mut index=String::new();
-    std::io::stdin()
-        .read_line(&mut index)
-        .expect("failed to do so");
-    let index:usize=index.trim().parse().expect("not an number");
-    let element=a[index];
-    println!("value of element at index {} is {}",index,element);
+// use std::io;
+// fn main(){
+//     let a=[1,2,3,4,5];
+//     println!("enter an array");
+//     let mut index=String::new();
+//     std::io::stdin()
+//         .read_line(&mut index)
+//         .expect("failed to do so");
+//     let index:usize=index.trim().parse().expect("not an number");
+//     let element=a[index];
+//     println!("value of element at index {} is {}",index,element);
     
 
 
-}
+// }
+
