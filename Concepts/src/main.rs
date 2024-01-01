@@ -17,9 +17,13 @@
 //     println!("x={}",x);
 //     println!("y={}",y);
 // }
-fn main() {
-    let c = 'z';
-    let z: char = 'ℤ'; // with explicit type annotation
-    let cat = '😻';
-    println!{"catttt={}",cat};
-}
+// fn main() {
+//     let c = 'z';
+//     let z: char = 'ℤ'; // with explicit type annotation
+//     let cat = '😻';
+//     println!{"catttt={}",cat};
+// }
+// fn main() {
+//     let tup: (i32, f64, u8) = (500, 6.4, 1);
+//     println!("{},{},{}", tup.0, tup.1, tup.2);
+// }
