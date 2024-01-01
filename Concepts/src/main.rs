@@ -27,12 +27,27 @@
 //     let tup: (i32, f64, u8) = (500, 6.4, 1);
 //     println!("{},{},{}", tup.0, tup.1, tup.2);
 // }
-fn main() {
-    let x: (i32, f64, u8) = (500, 6.4, 1);
+// fn main() {
+//     let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    let five_hundred = x.0;
+//     let five_hundred = x.0;
 
-    let six_point_four = x.1;
+//     let six_point_four = x.1;
 
-    let one = x.2;
+//     let one = x.2;
+// }
+use std::io;
+fn main(){
+    let a=[1,2,3,4,5];
+    println!("enter an array");
+    let mut index=String::new();
+    std::io::stdin()
+        .read_line(&mut index)
+        .expect("failed to do so");
+    let index:usize=index.trim().parse().expect("not an number");
+    let element=a[index];
+    println!("value of element at index {} is {}",index,element);
+    
+
+
 }
