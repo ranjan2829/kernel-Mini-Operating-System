@@ -52,12 +52,66 @@
 
 // }
 
+// fn main() {
+//     let x = plus_one(5);
+
+//     println!("The value of x is: {x}");
+// }
+
+// fn plus_one(x: i32) -> i32 {
+//     x + 1
+// }
+// fn main() {
+//     let number = 6;
+
+//     if number % 4 == 0 {
+//         println!("number is divisible by 4");
+//     } else if number % 3 == 0 {
+//         println!("number is divisible by 3");
+//     } else if number % 2 == 0 {
+//         println!("number is divisible by 2");
+//     } else {
+//         println!("number is not divisible by 4, 3, or 2");
+//     }
+// }
+
+// fn main(){
+//     let mut counter=0;
+//     'countingloop:loop{
+//         println!("counter ={}",counter);
+//         let mut remaining=10;
+//         loop{
+//             println!("remaining={remaining}");
+//             if remaining==9{
+//                 break;
+//             }
+//             if counter==2{
+//                 break countingloop;
+//             }
+//             remaining-=1;
+//         }
+//         counter+=1;
+//     }
+//     println!("end ={}",counter);
+// }
 fn main() {
-    let x = plus_one(5);
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
 
-    println!("The value of x is: {x}");
-}
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
 
-fn plus_one(x: i32) -> i32 {
-    x + 1
+        count += 1;
+    }
+    println!("End count = {count}");
 }
