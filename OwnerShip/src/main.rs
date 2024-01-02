@@ -34,12 +34,18 @@
 // fn makes_copy(some_integer: i32) { // some_integer comes into scope
 //     println!("{}", some_integer);
 // } // Here, some_integer goes out of scope. Nothing special happens.
-fn main(){
-    let s1=String::from("hello");
-    let s2=gives_ownership();
-    let s3=gives_takes(s1);
+// fn main(){
+//     let s1=String::from("hello");
+//     let s2=gives_ownership();
+//     let s3=gives_takes(s1);
 
 
-}
+// }
 
-
+// fn gives_ownership()->String{
+//     let some=String::from("ranjan");
+//     some
+// }
+// fn gives_takes(sometr:String)->String{
+//     sometr
+// }
