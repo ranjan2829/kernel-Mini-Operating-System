@@ -1,3 +1,5 @@
+//use std::String;
 fn main() {
-    println!("Hello, world!");
+    let mut s=String::from("ranjan");
+    println!("{}",s);
 }
