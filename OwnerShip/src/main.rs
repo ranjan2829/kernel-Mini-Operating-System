@@ -49,3 +49,13 @@
 // fn gives_takes(sometr:String)->String{
 //     sometr
 // }
+fn main(){
+    let s1=String::from("hi");
+    let (s2,len)=calculate(s1);
+    println!("length of {} is {}",s2,len);
+}
+fn calculate(s:String)->(String,usize){
+    let length=s.len();
+    (s,length)
+
+}
