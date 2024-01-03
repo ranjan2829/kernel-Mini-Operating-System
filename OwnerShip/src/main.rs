@@ -66,12 +66,12 @@
 // }
 // fn calculate(s:&String)->usize{
 //     s.len()
-fn main(){
-    let mut s=String::from("ranjan");
-    change(&mut s);
-    println!("{}",s);
-}
-fn change(s:&mut String){
-    s.push_str(",shitole");
+// fn main(){
+//     let mut s=String::from("ranjan");
+//     change(&mut s);
+//     println!("{}",s);
+// }
+// fn change(s:&mut String){
+//     s.push_str(",shitole");
 
-}
+// }
