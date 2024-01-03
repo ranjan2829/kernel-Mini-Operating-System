@@ -59,3 +59,11 @@
 //     (s,length)
 
 // }
+fn main(){
+    let s1=String::from("ranjan");
+    let length=calculate(&s1);
+    println!("{} length {}",s1,length);
+}
+fn calculate(s:&String)->usize{
+    s.len()
+}
