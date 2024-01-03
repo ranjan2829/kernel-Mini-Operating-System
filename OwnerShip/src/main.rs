@@ -106,6 +106,12 @@
 //     let r3 = &mut s; // no problem
 //     println!("{}", r3);
 // }
+fn main() {
+    let string = no_dangle();
+}
 
+fn no_dangle() -> String {
+    let s = String::from("hello");
 
-
+    s
+}
