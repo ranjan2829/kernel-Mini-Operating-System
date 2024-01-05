@@ -136,22 +136,24 @@
 //     let worst=&s[7..9];
 //     println!("{}{}",hello,worst);
 // }
-fn first_word(s: &String) -> &str {
+fn first_word(s: &String) -> (usize, &str) {
     let bytes = s.as_bytes();
 
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
-            return &s[0..i];
+            return (i, &s[0..i]);
         }
     }
 
-    &s[..]
+    (s.len(), &s)
 }
+
 
 fn main() {
     let word=String::from("ranjan1 is the worst");
     let var=first_word(&word);
-    println!("{}",var);
+    println!("Index: {}, Word: {}", var.0, var.1);
+
 }
 
 
