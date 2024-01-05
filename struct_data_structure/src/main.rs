@@ -15,5 +15,6 @@ fn main() {
         sign_in:24,
 
     };
+    println!("{},{},{},{}",user1.active,user1.username,user1.mail,user1.sign_in);
 
 }
