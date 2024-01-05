@@ -140,7 +140,7 @@ fn first_word(s: &String) -> (usize, &str) {
     let bytes = s.as_bytes();
 
     for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
+        if item == b'1' {
             return (i, &s[0..i]);
         }
     }
