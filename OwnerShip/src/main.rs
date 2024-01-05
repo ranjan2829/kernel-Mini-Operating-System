@@ -130,11 +130,12 @@
 //     println!("{}",length);
 
 // }
-fn main(){
-    let s =String::from("ranjan is worst");
-    let hello=&s[0..6];
-    let worst=&s[7..9];
-    println!("{}{}",hello,worst);
-}
+//fn main(){
+//     let s =String::from("ranjan is worst");
+//     let hello=&s[0..6];
+//     let worst=&s[7..9];
+//     println!("{}{}",hello,worst);
+// }
+
 
 
