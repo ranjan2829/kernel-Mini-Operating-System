@@ -124,5 +124,10 @@ fn first_word(s:&String)->usize{
     }
     s.len()
 }
-fn main(){}
+fn main(){
+    let word=String::from("ranjan");
+    let length = first_word(&word);
+    println!("{}",length);
+
+}
 
