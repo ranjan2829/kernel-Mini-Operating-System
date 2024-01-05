@@ -148,7 +148,11 @@ fn first_word(s: &String) -> &str {
     &s[..]
 }
 
-fn main() {}
+fn main() {
+    let word=String::from("ranjan1 is the worst");
+    let var=first_word(&word);
+    println!("{}",var);
+}
 
 
 
