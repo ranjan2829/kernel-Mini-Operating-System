@@ -42,3 +42,23 @@
 
 //     println!("{},{},{},{}", var.Email, var.sign_in, var.name, var.active);
 // }
+struct user{
+    active :bool,
+    username:String,
+    email:String,
+    sign_in:u64,
+}
+fn build_user(email:String,usename:String)->user{
+    user{
+        active:true,
+        usename:username,
+        email:email,
+        sign_in:1,
+    }
+}
+fn main(){
+    let user1=build_user{
+        String::from("@@@@@@@"),
+        String::from("ranjan3129"),
+    };
+}
