@@ -48,17 +48,17 @@ struct user{
     email:String,
     sign_in:u64,
 }
-fn build_user(email:String,usename:String)->user{
+fn build_user(email:String,username:String)->user{
     user{
         active:true,
-        usename:username,
+        username:username,
         email:email,
         sign_in:1,
     }
 }
 fn main(){
-    let user1=build_user{
+    let user1=build_user(
         String::from("@@@@@@@"),
         String::from("ranjan3129"),
-    };
+    );
 }
