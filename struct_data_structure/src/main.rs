@@ -138,8 +138,8 @@
 //     dimensions.0 * dimensions.1
 // }
 struct Rectangle{
-    width:u32;
-    height:u32;
+    width:u32,
+    height:u32,
 }
 fn main(){
     let rect1=Rectangle{
