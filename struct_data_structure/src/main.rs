@@ -130,3 +130,10 @@
 // fn area(width: u32, height: u32) -> u32 {
 //     width * height
 // }
+fn main(){
+    let rect=(23,23);
+    println!("{}",area(rect));
+}
+fn area(dimensions:(u32,u32))->u32{
+    dimensions.0 * dimensions.1
+}
