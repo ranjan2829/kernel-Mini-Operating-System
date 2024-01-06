@@ -61,4 +61,5 @@ fn main(){
         String::from("@@@@@@@"),
         String::from("ranjan3129"),
     );
+    println!("{},{},{},{}",user1.email,user1.username,user1.sign_in,user1.active);
 }
