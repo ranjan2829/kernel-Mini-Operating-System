@@ -86,5 +86,5 @@ fn main() {
         email: String::from("another@example.com"),
         sign_in_count: user1.sign_in_count,
     };
-    println!("{},{},{},{}",user1.email,user1.username,user1.sign_in,user1.active);
+    println!("{},{},{},{}",user2.email,user2.username,user2.sign_in_count,user2.active);
 }
