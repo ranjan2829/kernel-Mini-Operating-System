@@ -252,6 +252,10 @@ fn main(){
         height:40,
     };
     let rect3=Rectangle{
-        
-    }
+        width:60,
+        height:45,
+
+    };
+    println!("{}",rect1.can_hold(&rect2));
+    println!("{}",rect1.can_hold(&rect3));
 }
