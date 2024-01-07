@@ -1,4 +1,4 @@
-// #[derive(Debug)]
+#[derive(Debug)]
 // enum IPRKIND {
 //     V4,
 //     V6,
@@ -16,3 +16,28 @@
 // }
 
 // fn route(ip: IPRKIND) {}
+
+enum IPRKIND {
+    V4,
+    V6,
+}
+
+struct IPV {
+    kind: IPRKIND,
+    address: String,
+}
+
+fn main() {
+    let home = IPV {
+        kind: IPRKIND::V4,
+        address: String::from("137.0.0.1"),
+    };
+
+    let homie = IPV {
+        kind: IPRKIND::V6,
+        address: String::from("192.168.0.1"),
+    };
+
+    println!("{:?}, {:?}, {:?}, {:?}", home.kind, home.address, homie.kind, homie.address);
+}
+
