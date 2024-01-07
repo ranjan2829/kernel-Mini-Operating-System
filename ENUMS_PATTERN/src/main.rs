@@ -1,3 +1,4 @@
+#[derive(Debug)]
 enum IPRKIND {
     V4,
     V6,
