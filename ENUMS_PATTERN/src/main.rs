@@ -41,3 +41,18 @@
 // //     println!("{:?}, {:?}, {:?}, {:?}", home.kind, home.address, homie.kind, homie.address);
 // // }
 
+enum Coin{
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+fn value(coin:Coin)->u8{
+    match coin{
+        Coin::Penny=>1,
+        Coin::Nickel=>2,
+        Coin::Dime=>3,
+        Coin::Quarter=>4,
+    }
+}
+fn main(){}
