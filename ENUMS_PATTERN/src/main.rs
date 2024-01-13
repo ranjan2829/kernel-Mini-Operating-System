@@ -49,10 +49,17 @@ enum Coin{
 }
 fn value(coin:Coin)->u8{
     match coin{
-        Coin::Penny=>1,
+        Coin::Penny=>{
+            println!("PENNY");
+            1
+        },
         Coin::Nickel=>2,
         Coin::Dime=>3,
         Coin::Quarter=>4,
     }
 }
-fn main(){}
+fn main(){
+    let var=value(Coin::Penny);
+    println!("{}",var)
+
+}
