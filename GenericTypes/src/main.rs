@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Ranjan Shitole is gonna be the best trader in the world !");
 }
