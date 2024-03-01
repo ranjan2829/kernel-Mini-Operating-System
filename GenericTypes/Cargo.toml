@@ -1,4 +1,3 @@
-workspace = { members = ["GenericTypes"] }
 [package]
 name = "GenericTypes"
 version = "0.1.0"
