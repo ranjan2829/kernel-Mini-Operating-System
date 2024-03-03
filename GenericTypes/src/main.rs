@@ -1,3 +1,10 @@
 fn main() {
-    println!("Ranjan Shitole is gonna be the best trader in the world !");
+    let number_list = vec![34, 50, 25, 100, 65];
+    let mut largest = &number_list[0];
+    for number in &number_list {
+        if number > largest {
+            largest = number;
+        }
+    }
+    println!("the largest number is {}", largest);
 }
