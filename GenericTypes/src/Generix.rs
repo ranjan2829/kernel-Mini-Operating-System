@@ -1,13 +1,17 @@
-struct Point<T, U> {
-    x: T,
-    y: U,
-}
+// struct Point<T, U> {
+//     x: T,
+//     y: U,
+// }
 
-fn main() {
-    let both_integer = Point { x: 5, y: 10 };
-    let both_float = Point { x: 1.0, y: 4.0 };
-    let integer_and_float = Point { x: 5, y: 4.0 };
-}
+// fn main() {
+//     let both_integer = Point { x: 5, y: 10 };
+//     let both_float = Point { x: 1.0, y: 4.0 };
+//     let integer_and_float = Point { x: 5, y: 4.0 };
+
+//     enum Result<T, E> {
+//         Ok(T),
+//         Err(E),
+//     }
 
 // fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> usize {
 //     let mut largest_index = 0;
