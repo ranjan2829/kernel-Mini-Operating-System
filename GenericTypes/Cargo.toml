@@ -1,3 +1,4 @@
+workspace = { members = ["src/Traits"] }
 [package]
 name = "GenericTypes"
 version = "0.1.0"
