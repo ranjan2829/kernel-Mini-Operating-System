@@ -36,4 +36,5 @@ fn main() {
     let i = ImportantExcerpt {
         part: first_sentence,
     };
+    println!("{}", i.part);
 }
