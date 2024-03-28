@@ -9,20 +9,30 @@
 //
 
 // Assuming longest function is defined in another module called utils
-fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
-    if s1.len() > s2.len() {
-        s1
-    } else {
-        s2
-    }
+// fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
+//     if s1.len() > s2.len() {
+//         s1
+//     } else {
+//         s2
+//     }
+// }
+
+// fn main() {
+//     let string1 = String::from("long string is long");
+
+//     {
+//         let string2 = String::from("xyz");
+//         let result = longest(string1.as_str(), string2.as_str());
+//         println!("The longest string is {}", result);
+//     }
+// }
+struct Important<'a>{
+    part: &'a str,
 }
-
-fn main() {
-    let string1 = String::from("long string is long");
-
-    {
-        let string2 = String::from("xyz");
-        let result = longest(string1.as_str(), string2.as_str());
-        println!("The longest string is {}", result);
-    }
+fn main(){
+    let novel=String::from("Call me Ranjan , Some years ago ....");
+    let first=novel.split(".").next().except("could not find a '.'");
+    let i Important{
+        part:first,
+    };
 }
