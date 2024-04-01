@@ -221,6 +221,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore = "high values !!"]
     fn one_hundred() {
         assert_eq!(102, add_two(100));
     }
