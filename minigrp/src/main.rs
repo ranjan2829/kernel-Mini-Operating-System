@@ -1,6 +1,11 @@
 use std::env;
+
 fn main() {
     let args: Vec<String> = env::args().collect();
-    //iterator on the command line to collect the string
-    dbg!(args);
+
+    let query = &args[1];
+    let file_path = &args[2];
+
+    println!("Searching for {}", query);
+    println!("In file {}", file_path);
 }
