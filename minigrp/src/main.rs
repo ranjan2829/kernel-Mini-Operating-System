@@ -20,8 +20,8 @@ struct config {
     query: String,
     file_path: String,
 }
-// fn parsing_config(args: &[String]) -> config {
-//     let query = args[1].clone();
-//     let file_path = args[2].clone();
-//     config { query, file_path }
-// }
+fn parsing_config(args: &[String]) -> config {
+    let query = args[1].clone();
+    let file_path = args[2].clone();
+    config { query, file_path }
+}
