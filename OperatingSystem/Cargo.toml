@@ -7,5 +7,7 @@ edition = "2021"
 panic = "abort"
 [profile.release]
 panic = "abort"
+[target.'cfg(target_os = "macos")']
+rustflags = ["-C", "link-args=-e __start -static -nostartfiles"]
 
 [dependencies]
