@@ -6,5 +6,10 @@
   "target-pointer-width": "64",
   "target-c-int-width": "32",
   "os": "none",
-  "executables": true
+  "executables": true,
+  "panic-strategy": "abort",
+  "disable-redzone": true,
+  "features": "-mnx,-sse,-soft-float",
+  "linker-flavor": "ld.lld",
+  "linker": "rust-lld"
 }
