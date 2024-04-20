@@ -1,0 +1,9 @@
+/Users/ranjanshahajishitole/Desktop/Operating-System-Rust/OperatingSystem/target/x86_64-os/debug/deps/libbootloader-ab2df6aa8099571d.rmeta: /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/lib.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/mod.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/memory_map.rs
+
+/Users/ranjanshahajishitole/Desktop/Operating-System-Rust/OperatingSystem/target/x86_64-os/debug/deps/libbootloader-ab2df6aa8099571d.rlib: /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/lib.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/mod.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/memory_map.rs
+
+/Users/ranjanshahajishitole/Desktop/Operating-System-Rust/OperatingSystem/target/x86_64-os/debug/deps/bootloader-ab2df6aa8099571d.d: /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/lib.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/mod.rs /Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/memory_map.rs
+
+/Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/lib.rs:
+/Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/mod.rs:
+/Users/ranjanshahajishitole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.9.28/src/bootinfo/memory_map.rs:
