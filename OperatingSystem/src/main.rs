@@ -6,7 +6,7 @@ use core::panic::PanicInfo;
 fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
-static HELLO: &[u8] = b"HEllO ! This Ranjan's Operating System ! ";
+static HELLO: &[u8] = b"HEllO ! This is Ranjan's Operating System !, -Built in Rust to Execute on Kernel That Runs on Registers!  ";
 #[no_mangle] // don't mangle the name of this function
 pub extern "C" fn _start() -> ! {
     let vga_buffer = 0xb8000 as *mut u8;
@@ -19,3 +19,4 @@ pub extern "C" fn _start() -> ! {
 
     loop {}
 }
+mod vga_buffer;
