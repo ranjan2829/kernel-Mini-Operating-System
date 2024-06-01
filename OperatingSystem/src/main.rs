@@ -1,35 +1,17 @@
 #![no_std]
 #![no_main]
+
+use core::fmt::Write;
 use core::panic::PanicInfo;
-use volatile::Volatile;
 mod vga_buffer;
 
-static HELLO: &[u8] = b"Hello Sakshi , welcome to Ranjan's Kernel OS !";
+static HELLO: &[u8] = b"Hello Sakshi, welcome to Ranjan's Kernel OS!";
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    // let vga_buffer = 0xb8000 as *mut u8;
-
-    // for (i, &byte) in HELLO.iter().enumerate() {
-    //     unsafe {
-    //         *vga_buffer.offset(i as isize * 2) = byte;
-    //         *vga_buffer.offset(i as isize * 2 + 1) = 0xb;
-    //     }
-    // }
-    // vga_buffer::print_something();
-
-    use core::fmt::Write;
-    vga_buffer::WRITER
-        .lock()
-        .write_str("HELLO AGAIN WORLD < WELCOME ")
-        .unwrap();
-    write!(
-        vga_buffer::WRITER.lock(),
-        ", some numbers : {} {} ",
-        42,
-        1.337
-    )
-    .unwrap();
+    let mut writer = vga_buffer::WRITER.lock();
+    writer.write_str("HELLO AGAIN WORLD < WELCOME ").unwrap();
+    write!(writer, ", some numbers: {} {}", 42, 1.337).unwrap();
 
     loop {}
 }
