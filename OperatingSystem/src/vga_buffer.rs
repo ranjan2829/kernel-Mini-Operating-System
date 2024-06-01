@@ -1,7 +1,6 @@
 #[allow(dead_code)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u8)]
-#[repr(transparent)]
 pub enum Color {
     Black = 0,
     Blue = 1,
@@ -19,11 +18,4 @@ pub enum Color {
     Pink = 13,
     Yellow = 14,
     White = 15,
-}
-struct ColorCode(u8);
-
-impl ColorCode {
-    fn new(ForeGorund: Color, Background: Color) -> ColorCode {
-        ColorCode((Background as u8) << 4 | (ForeGorund as u8))
-    }
 }
