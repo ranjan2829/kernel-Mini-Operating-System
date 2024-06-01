@@ -19,3 +19,30 @@ pub enum Color {
     Yellow = 14,
     White = 15,
 }
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[repr(transparent)]
+struct ColorCode(u8);
+
+impl ColorCode {
+    fn new(foreground: Color, background: Color) -> ColorCode {
+        ColorCode((backgorund as u8) << 4 | (foreground as u8))
+    }
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[repr(C)]
+struct ScreenChar {
+    ascii_character: u8,
+    color_code: ColorCode,
+}
+const Buffer_height: usize = 25;
+const buffer_width: uszie = 80;
+#[repr(transparent)]
+struct Buffer {
+    chars: [[ScreenChar; buffer_width]; buffer_height],
+}
+pub struct writer {
+    column_position: usize,
+    color_code: ColorCode,
+    buffer: &'static mut Buffer,
+}
