@@ -154,13 +154,13 @@ impl fmt::Write for Writer {
         Ok(())
     }
 }
-}
+use spin::Mutex;
+
 lazy_static!{
 
-
-    pub static WRITER :Write =Write{
+    pub static WRITER :Mutex<Write> =Mutex::(Write{
         column_position:0,
         color_code:ColorCode::new(COlor::Yellow,Color::Black),
         buffer:unsafe{&mut *(0xb8000 as *mut Buffer)},
-
-};
+        });
+}

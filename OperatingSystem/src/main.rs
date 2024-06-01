@@ -16,7 +16,20 @@ pub extern "C" fn _start() -> ! {
     //         *vga_buffer.offset(i as isize * 2 + 1) = 0xb;
     //     }
     // }
-    vga_buffer::print_something();
+    // vga_buffer::print_something();
+
+    use core::fmt::Write;
+    vga_buffer::WRITER
+        .lock()
+        .write_str("HELLO AGAIN WORLD < WELCOME ")
+        .unwrap();
+    write!(
+        vga_buffer::WRITER.lock(),
+        ", some numbers : {} {} ",
+        42,
+        1.337
+    )
+    .unwrap();
 
     loop {}
 }
