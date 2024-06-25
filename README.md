@@ -1,5 +1,4 @@
 # Rust Learning Repository
-#currently my exams goin on so break in Quant finance 
 
 Welcome to my Rust learning repository! 🦀
 
