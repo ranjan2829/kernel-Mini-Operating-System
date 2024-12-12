@@ -5,7 +5,7 @@ use core::fmt::Write;
 use core::panic::PanicInfo;
 mod vga_buffer;
 
-static HELLO: &[u8] = b"Hello Sakshi, welcome to Ranjan's Kernel OS!";
+static HELLO: &[u8] = b"Hello !, welcome to Ranjan's Kernel OS!";
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
